@@ -1,0 +1,171 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+.level-complete-modal {
+  background-color: #1a1a2e;
+  border-radius: 15px;
+  width: 90%;
+  max-width: 500px;
+  padding: 30px;
+  box-shadow: 0 0 30px rgba(79, 195, 247, 0.3);
+  animation: modalFadeIn 0.5s ease;
+}
+
+@keyframes modalFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.modal-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.success-title {
+  color: #66bb6a;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.fail-title {
+  color: #ef5350;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.success-icon, .fail-icon {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.success-icon i {
+  color: #66bb6a;
+}
+
+.fail-icon i {
+  color: #ef5350;
+}
+
+.modal-content {
+  margin-bottom: 30px;
+}
+
+.modal-content h3 {
+  color: #4fc3f7;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.level-stats {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.stat-item i {
+  font-size: 1.5rem;
+  color: #4fc3f7;
+}
+
+.knowledge-card {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 15px;
+  margin-top: 20px;
+}
+
+.knowledge-card h4 {
+  color: #ffeb3b;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.knowledge-card h4 i {
+  margin-right: 5px;
+}
+
+.knowledge-card p {
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.modal-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.next-button, .retry-button, .back-button {
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.next-button {
+  background-color: #66bb6a;
+  color: white;
+}
+
+.next-button:hover {
+  background-color: #4caf50;
+}
+
+.retry-button {
+  background-color: #5c6bc0;
+  color: white;
+}
+
+.retry-button:hover {
+  background-color: #3f51b5;
+}
+
+.back-button {
+  background-color: #424242;
+  color: white;
+}
+
+.back-button:hover {
+  background-color: #616161;
+}
+
+@media (max-width: 768px) {
+  .level-complete-modal {
+    padding: 20px;
+  }
+  
+  .success-title, .fail-title {
+    font-size: 1.8rem;
+  }
+  
+  .success-icon, .fail-icon {
+    font-size: 2.5rem;
+  }
+}

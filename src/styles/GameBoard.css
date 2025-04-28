@@ -1,0 +1,14 @@
+.game-board {
+  display: grid;
+  gap: 10px;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  perspective: 1000px;
+}
+
+@media (max-width: 768px) {
+  .game-board {
+    gap: 5px;
+  }
+}
